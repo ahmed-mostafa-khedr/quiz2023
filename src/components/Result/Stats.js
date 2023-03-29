@@ -40,7 +40,8 @@ const Stats = ({
         Time Taken:{" "}
         {`${Number(hours)}h ${Number(minutes)}m ${Number(seconds)}s`}
       </Header>
-      <div style={{ marginTop: 35 }}>
+      {/*
+          <div style={{ marginTop: 35 }}>
         <Button
           primary
           content="Play Again"
@@ -59,8 +60,9 @@ const Stats = ({
           labelPosition="left"
           style={{ marginBottom: 8 }}
         />
-        {/*  <ShareButton />*/}
-      </div>
+          <ShareButton />
+        </div>
+  */}
     </Segment>
   );
 };

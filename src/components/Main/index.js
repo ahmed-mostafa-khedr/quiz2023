@@ -11,7 +11,7 @@ import {
 } from "semantic-ui-react";
 
 import mindImg from "../../images/mind.svg";
-import mock from "../Quiz/mock.json";
+
 import {
   CATEGORIES,
   NUM_OF_QUESTIONS,
@@ -22,7 +22,7 @@ import {
 import { shuffle } from "../../utils";
 
 import Offline from "../Offline";
-
+import mock from "../Quiz/mock.json";
 const Main = ({ startQuiz }) => {
   const [category, setCategory] = useState("0");
   const [numOfQuestions, setNumOfQuestions] = useState(50);
@@ -63,8 +63,8 @@ const Main = ({ startQuiz }) => {
       .then((respone) => respone.json())
       .then((data) =>
         setTimeout(() => {
-          const { response_code, results } = data;
           console.log(data);
+          const { response_code, results } = mock;
 
           if (response_code === 1) {
             const message = (

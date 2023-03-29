@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {
   Container,
   Segment,
@@ -9,15 +9,14 @@ import {
   Icon,
   Message,
   Menu,
-  Header
-} from 'semantic-ui-react';
-import he from 'he';
+  Header,
+} from "semantic-ui-react";
+import he from "he";
 
-import Countdown from '../Countdown';
-import { getLetter } from '../../utils';
+import Countdown from "../Countdown";
+import { getLetter } from "../../utils";
 
 const Quiz = ({ data, countdownTime, endQuiz }) => {
-
   const [questionIndex, setQuestionIndex] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [userSlectedAns, setUserSlectedAns] = useState(null);
@@ -39,7 +38,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
       question: he.decode(data[questionIndex].question),
       user_answer: userSlectedAns,
       correct_answer: he.decode(data[questionIndex].correct_answer),
-      point
+      point,
     });
 
     if (questionIndex === data.length - 1) {
@@ -47,7 +46,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
         totalQuestions: data.length,
         correctAnswers: correctAnswers + point,
         timeTaken,
-        questionsAndAnswers: qna
+        questionsAndAnswers: qna,
       });
     }
 
@@ -57,12 +56,12 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
     setQuestionsAndAnswers(qna);
   };
 
-  const timeOver = timeTaken => {
+  const timeOver = (timeTaken) => {
     return endQuiz({
       totalQuestions: data.length,
       correctAnswers,
       timeTaken,
-      questionsAndAnswers
+      questionsAndAnswers,
     });
   };
 
@@ -108,7 +107,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                           active={userSlectedAns === decodedOption}
                           onClick={handleItemClick}
                         >
-                          <b style={{ marginRight: '8px' }}>{letter}</b>
+                          <b style={{ marginRight: "8px" }}>{letter}</b>
                           {decodedOption}
                         </Menu.Item>
                       );
@@ -141,7 +140,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
 Quiz.propTypes = {
   data: PropTypes.array.isRequired,
   countdownTime: PropTypes.number.isRequired,
-  endQuiz: PropTypes.func.isRequired
+  endQuiz: PropTypes.func.isRequired,
 };
 
 export default Quiz;

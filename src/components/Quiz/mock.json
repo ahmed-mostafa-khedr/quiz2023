@@ -5,436 +5,130 @@
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Where is the train station &quot;Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch&quot;?",
-      "correct_answer": "Wales",
-      "incorrect_answers": ["Moldova", "Czech Republic", "Denmark"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which company did Valve cooperate with in the creation of the Vive?",
-      "correct_answer": "HTC",
-      "incorrect_answers": ["Oculus", "Google", "Razer"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
-      "correct_answer": "Demolition",
+      "question": "As a part of a research project, you want to study the diffusion of different substances in a kidney cell from the luminal space towards the basal membrane in a rat. In order to establish the mechanism of diffusion of different substances, you administer a blocker of the Na/K pump. Which of the following is the most likely finding in the rat’s urine?",
+      "correct_answer": "glucosuria",
       "incorrect_answers": [
-        "The Dream Team",
-        "The Bushwhackers",
-        "The British Bulldogs"
+        "Albuminuria",
+        "Oliguria",
+        "Hyponatriuria",
+        "Hyperchloremia"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the first book of the Old Testament?",
-      "correct_answer": "Genesis",
-      "incorrect_answers": ["Exodus", "Leviticus", "Numbers"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "In past times, what would a gentleman keep in his fob pocket?",
-      "correct_answer": "Watch",
-      "incorrect_answers": ["Money", "Keys", "Notebook"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Area 51 is located in which US state?",
-      "correct_answer": "Nevada",
-      "incorrect_answers": ["Arizona", "New Mexico", "Utah"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "How would one say goodbye in Spanish?",
-      "correct_answer": "Adi&oacute;s",
-      "incorrect_answers": [" Hola", "Au Revoir", "Salir"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which sign of the zodiac is represented by the Crab?",
-      "correct_answer": "Cancer",
-      "incorrect_answers": ["Libra", "Virgo", "Sagittarius"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "On a dartboard, what number is directly opposite No. 1?",
-      "correct_answer": "19",
-      "incorrect_answers": ["20", "12", "15"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What does the &#039;S&#039; stand for in the abbreviation SIM, as in SIM card? ",
-      "correct_answer": "Subscriber",
-      "incorrect_answers": ["Single", "Secure", "Solid"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What type of animal was Harambe, who was shot after a child fell into it&#039;s enclosure at the Cincinnati Zoo?",
-      "correct_answer": "Gorilla",
-      "incorrect_answers": ["Tiger", "Panda", "Crocodile"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Red Vines is a brand of what type of candy?",
-      "correct_answer": "Licorice",
-      "incorrect_answers": ["Lollipop", "Chocolate", "Bubblegum"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the nickname of the US state of California?",
-      "correct_answer": "Golden State",
-      "incorrect_answers": ["Sunshine State", "Bay State", "Treasure State"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is on display in the Madame Tussaud&#039;s museum in London?",
-      "correct_answer": "Wax sculptures",
+      "question": "A 45-year-old patient comes to your office with dyspnea and cough. He tells you, “Doctor, I think the problem is because I have been smoking 2 packs/day for more than 30 years. I have been advised to stop, but I just can’t”. An ABG done reveals hypoxemia and on examination you find liver dullness in the 6th ICS on the right side. Chest X-rays shows flattening of the diaphragm. Which of the following is most likely responsible for his reduced blood oxygen concentration?",
+      "correct_answer": "Change in the Surface area of the membrane",
       "incorrect_answers": [
-        "Designer clothing",
-        "Unreleased film reels",
-        "Vintage cars"
+        "A decrease in the Concentration gradient across the membrane",
+        "A decrease in the Solubility of Oxygen",
+        "A decrease in the thickness of the membrane",
+        "An increase in the Molecular weight of Oxygen"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Five dollars is worth how many nickles?",
-      "correct_answer": "100",
-      "incorrect_answers": ["50", "25", "69"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which one of these is not a typical European sword design?",
-      "correct_answer": "Scimitar",
-      "incorrect_answers": ["Falchion", "Ulfberht", "Flamberge"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;",
-      "correct_answer": "Truth",
-      "incorrect_answers": ["Answer", "Cause", "Source"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the name of Poland in Polish?",
-      "correct_answer": "Polska",
-      "incorrect_answers": ["Pupcia", "Polszka", "P&oacute;land"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",
-      "correct_answer": "Print",
-      "incorrect_answers": ["Digest", "Look", "Read"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What was the first ever London Underground line to be built?",
-      "correct_answer": "Metropolitan Line",
-      "incorrect_answers": ["Circle Line", "Bakerloo Line", "Victoria Line"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "How tall is the Burj Khalifa?",
-      "correct_answer": "2,722 ft",
-      "incorrect_answers": ["2,717 ft", "2,546 ft", "3,024 ft"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What machine element is located in the center of fidget spinners?",
-      "correct_answer": "Bearings",
-      "incorrect_answers": ["Axles", "Gears", "Belts"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is Tasmania?",
-      "correct_answer": "An Australian State",
+      "question": "As a part of a research project, you are about to investigate the difference in the rate of diffusion of various substances that share the same or similar chemical structure using protein carrier transport systems. First you dissolve glucose in the interstitial fluid surrounding an intestinal cell and note the rate of movement of glucose into the cell. After a few minutes you dissolve galactose and note that the rate of diffusion for glucose decreases considerably. What is the best explanation for the phenomenon after adding galactose?",
+      "correct_answer": "When you added galactose you created competition for the carrier",
       "incorrect_answers": [
-        "A flavor of Ben and Jerry&#039;s ice-cream",
-        "A Psychological Disorder",
-        "The Name of a Warner Brothers Cartoon Character"
+        " You already reached the saturation of all carriers available on the cell",
+        "You changed the natural isomer of the substance when you added galactose",
+        "You decreased the concentration gradient of glucose when you added galactose",
+        "None of them"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which country, not including Japan, has the most people of japanese decent?",
-      "correct_answer": "Brazil",
-      "incorrect_answers": ["China", "South Korea", "United States of America"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "In which fast food chain can you order a Jamocha Shake?",
-      "correct_answer": "Arby&#039;s",
-      "incorrect_answers": ["McDonald&#039;s", "Burger King", "Wendy&#039;s"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which of the following is the IATA code for Manchester Airport?",
-      "correct_answer": "MAN",
-      "incorrect_answers": ["EGLL", "LHR", "EGCC"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the Zodiac symbol for Gemini?",
-      "correct_answer": "Twins",
-      "incorrect_answers": ["Fish", "Scales", "Maiden"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What zodiac sign is represented by a pair of scales?",
-      "correct_answer": "Libra",
-      "incorrect_answers": ["Aries", "Capricorn", "Sagittarius"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "The likeness of which president is featured on the rare $2 bill of USA currency?",
-      "correct_answer": "Thomas Jefferson",
+      "question": "A physiologist is studying the factors that affect movement of solutes and solvents between two compartments separated by a membrane only permeable to water. In compartment A, the concentration of glucose = 300 mOsm/L. In compartment B, the concentration of NaCl = 150 mOsm/L. In which direction will the water diffuse? ",
+      "correct_answer": "There will be no Water diffusion because of even distribution of solutes in the two compartments",
       "incorrect_answers": [
-        "Martin Van Buren",
-        "Ulysses Grant",
-        "John Quincy Adams"
+        "From A:B",
+        "From B:A",
+        "First from B: A until osmotic equilibrium stops water movement",
+        "There will be no Water diffusion because only solutes diffuse not solvents"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is Cynophobia the fear of?",
-      "correct_answer": "Dogs",
-      "incorrect_answers": ["Birds", "Flying", "Germs"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "When someone is inexperienced they are said to be what color?",
-      "correct_answer": "Green",
-      "incorrect_answers": ["Red", "Blue", "Yellow"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "The Flag of the European Union has how many stars on it?",
-      "correct_answer": "12",
-      "incorrect_answers": ["10", "14", "16"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "When one is &quot;envious&quot;, they are said to be what color?",
-      "correct_answer": "Green",
-      "incorrect_answers": ["Red", "Blue", "Yellow"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the closest planet to our solar system&#039;s sun?",
-      "correct_answer": "Mercury",
-      "incorrect_answers": ["Mars", "Jupiter", "Earth"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Earth is located in which galaxy?",
-      "correct_answer": "The Milky Way Galaxy",
+      "question": "You are studying the heart muscle of a rat in the lab and you note the presence of a Na/K pump in this cell. You also note that any time 3 Na+ molecules go inside the cell, 1 Ca++ molecule goes out of the cell. This is an example of which of the following transports?",
+      "correct_answer": "Countertransport or antiport",
       "incorrect_answers": [
-        "The Mars Galaxy",
-        "The Galaxy Note",
-        "The Black Hole"
+        "Primary transport",
+        "Facilitated transport",
+        "Primary active transport",
+        "Simple diffusion"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What are Panama hats made out of?",
-      "correct_answer": "Straw",
-      "incorrect_answers": ["Silk", "Hemp", "Flax"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
-      "correct_answer": "Liver",
-      "incorrect_answers": ["Heart", "Stomach", "Intestines"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "The Canadian $1 coin is colloquially known as a what?",
-      "correct_answer": "Loonie",
-      "incorrect_answers": ["Boolie", "Foolie", "Moodie"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which of the following blood component forms a plug at the site of injuries?",
-      "correct_answer": "Platelets",
+      "question": "Protein carriers transport substances that cannot readily diffuse across the membrane. There is no need for a transporter for gases and most lipid soluble substances because they readily penetrate the membrane.  Which of the following is true about protein mediated transport?",
+      "correct_answer": "D- glucose transporter will transport D- glucose but not L-glucose",
       "incorrect_answers": [
-        "Red blood cells",
-        "White blood cells",
-        "Blood plasma"
+        "TM is inversely proportional to the number of functioning transporters",
+        " It gives no room for competition with substances of similar structures",
+        "It is faster to transport the substance using simple diffusion than using protein mediated transport",
+        "Once all the transporters are saturated, transport rate reduces"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What is the French word for &quot;fish&quot;?",
-      "correct_answer": "poisson",
-      "incorrect_answers": ["fiche", "escargot", "mer"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the profession of Elon Musk&#039;s mom, Maye Musk?",
-      "correct_answer": "Model",
-      "incorrect_answers": ["Professor", "Biologist", "Musician"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the famous Papa John&#039;s last name?",
-      "correct_answer": "Schnatter",
-      "incorrect_answers": ["Chowder", "Williams", "ANDERSON"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Which country has the union jack in its flag?",
-      "correct_answer": "New Zealand",
-      "incorrect_answers": ["South Africa", "Canada", "Hong Kong"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "When was the Playstation 3 released?",
-      "correct_answer": "November 11, 2006",
+      "question": "A 46-year-old patient comes to your office with cough, dyspnea and weight loss. He said that the problem started 5 months ago and now he cannot deal with this problem any longer. He has a history of smoking for more than 20 years. You order a chest X-ray and you find a centrally located mass in the left lung. To further establish your diagnosis you deicide to measure the urine osmolarity, which is high. The concentration of Na in the plasma is 122mmol/L. To what can these findings be compared in the ICF and ECF?",
+      "correct_answer": "Like a gain of hypotonic fluid",
       "incorrect_answers": [
-        "January 8, 2007",
-        "December 25, 2007",
-        "July 16, 2006"
+        " Like a gain of hypertonic fluid",
+        "Like a loss of hypotonic fluid",
+        "Like a gain of isotonic fluid",
+        "None of them"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
-      "correct_answer": "Helicopter",
-      "incorrect_answers": ["Stealth Blimp", "Jet", "Space Capsule"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Who invented the first ever chocolate bar, in 1847?",
-      "correct_answer": "Joseph Fry",
-      "incorrect_answers": ["Andrew Johnson", "John Cadbury", "John Tyler"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "In aerodynamics, which force pushes an object upwards?",
-      "correct_answer": "Lift",
-      "incorrect_answers": ["Drag", "Weight", "Thrust"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "The &ldquo;fairy&rdquo; type made it&rsquo;s debut in which generation of the Pokemon core series games?",
-      "correct_answer": "6th",
-      "incorrect_answers": ["2nd", "7th", "4th"]
-    },
-    {
-      "category": "General Knowledge",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "Waluigi&#039;s first appearance was in what game?",
-      "correct_answer": "Mario Tennis 64 (N64)",
+      "question": "A professional athlete is about to start the Arizona’s Marathon. He starts running but in the fifth mile, the patient starts getting confused and develops redness on his face. After this, the patient is retired from the competition, you note that the patient is very hot, with a temperature is 106F and he is not sweating at all. Your expected findings in the ICF and ECF of this patient will be:",
+      "correct_answer": "No change",
       "incorrect_answers": [
-        "Wario Land: Super Mario Land 3",
-        "Mario Party (N64)",
-        "Super Smash Bros. Ultimate"
+        "Like a gain of hypotonic fluid",
+        "Like a gain of hypertonic fluid",
+        "Like a loss of hypertonic fluid",
+        "None of them"
       ]
     },
     {
       "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "Which of these Marvel games was released on the Playstation 2?",
-      "correct_answer": "Spider-Man 2",
+      "question": "A 35 year old patient comes to you office with polyuria and polydipsia. He said that the problem started few weeks ago. You order a urine osmolarity, which is low, and a plasma osmolarity, which is high. After other tests, you determine that the patient has central diabetes insipidus. Which of the following will be your finding if you compare solute concentration in the ECF and ICF after the administration of vasopressin with the patient’s volume status in the two compartments?",
+      "correct_answer": "Normal volume and solute concentration between the ECF and ICF",
       "incorrect_answers": [
-        "Silver Surfer",
-        "Howard the Duck",
-        "Wolverine: Adamantium Rage"
+        "Decreased solute concentration in the ECF and increased volume in the ECF and ICF",
+        "Increased solute concentration in the ECF and decreased volume in the ICF",
+        "Normal solute concentration and increased volume in the ECF",
+        "None of them"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the physiology laboratory, a group of medical students decided to test one of the new concepts they learned in the classroom. One of them volunteered to be the subject. His hematocrit reading was 60 and his plasma volume was measured to be 3L.He weighs188lbs and he is 6ft tall. His blood pressure was however not checked. What is His total blood volume?",
+      "correct_answer": "7.5 L",
+      "incorrect_answers": [
+        "6.5L",
+        " 7.0 L",
+        "8.0 L",
+        "Cannot be determined since his blood pressure was not checked"
       ]
     }
   ]
