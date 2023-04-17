@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import Layout from '../Layout';
-import Loader from '../Loader';
-import Main from '../Main';
-import Quiz from '../Quiz';
-import Result from '../Result';
-
-import { shuffle } from '../../utils';
+import Layout from "../Layout";
+import Loader from "../Loader";
+import Main from "../Main";
+import Quiz from "../Quiz";
+import Result from "../Result";
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { shuffle } from "../../utils";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -15,9 +15,29 @@ const App = () => {
   const [isQuizStarted, setIsQuizStarted] = useState(false);
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
   const [resultData, setResultData] = useState(null);
+  const handle = useFullScreenHandle();
 
+  useEffect(() => {
+    // define a custom handler function
+    // for the contextmenu event
+    const handleContextMenu = (e) => {
+      // prevent the right-click menu from appearing
+      e.preventDefault();
+    };
+
+    // attach the event listener to
+    // the document object
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    // clean up the event listener when
+    // the component unmounts
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
   const startQuiz = (data, countdownTime) => {
     setLoading(true);
+    handle.enter();
     setCountdownTime(countdownTime);
 
     setTimeout(() => {
@@ -27,7 +47,7 @@ const App = () => {
     }, 1000);
   };
 
-  const endQuiz = resultData => {
+  const endQuiz = (resultData) => {
     setLoading(true);
 
     setTimeout(() => {
@@ -42,7 +62,7 @@ const App = () => {
     setLoading(true);
 
     const shuffledData = shuffle(data);
-    shuffledData.forEach(element => {
+    shuffledData.forEach((element) => {
       element.options = shuffle(element.options);
     });
 
@@ -70,18 +90,24 @@ const App = () => {
   };
 
   return (
-    <Layout>
-      {loading && <Loader />}
-      {!loading && !isQuizStarted && !isQuizCompleted && (
-        <Main startQuiz={startQuiz} />
-      )}
-      {!loading && isQuizStarted && (
-        <Quiz data={data} countdownTime={countdownTime} endQuiz={endQuiz} />
-      )}
-      {!loading && isQuizCompleted && (
-        <Result {...resultData} replayQuiz={replayQuiz} resetQuiz={resetQuiz} />
-      )}
-    </Layout>
+    <FullScreen handle={handle}>
+      <Layout>
+        {loading && <Loader />}
+        {!loading && !isQuizStarted && !isQuizCompleted && (
+          <Main startQuiz={startQuiz} />
+        )}
+        {!loading && isQuizStarted && (
+          <Quiz data={data} countdownTime={countdownTime} endQuiz={endQuiz} />
+        )}
+        {!loading && isQuizCompleted && (
+          <Result
+            {...resultData}
+            replayQuiz={replayQuiz}
+            resetQuiz={resetQuiz}
+          />
+        )}
+      </Layout>
+    </FullScreen>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import {
   Container,
@@ -9,9 +9,10 @@ import {
   Button,
   Message,
 } from "semantic-ui-react";
-
+import { render } from "react-dom";
+import ReactFullscreeen from "react-easyfullscreen";
 import mindImg from "../../images/mind.svg";
-
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import {
   CATEGORIES,
   NUM_OF_QUESTIONS,
@@ -24,6 +25,7 @@ import { shuffle } from "../../utils";
 import Offline from "../Offline";
 import mock from "../Quiz/mock.json";
 const Main = ({ startQuiz }) => {
+  const handle = useFullScreenHandle();
   const [category, setCategory] = useState("0");
   const [numOfQuestions, setNumOfQuestions] = useState(50);
   const [difficulty, setDifficulty] = useState("0");
@@ -33,6 +35,7 @@ const Main = ({ startQuiz }) => {
     minutes: 59,
     seconds: 59,
   });
+
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState(null);
   const [offline, setOffline] = useState(false);
@@ -112,6 +115,7 @@ const Main = ({ startQuiz }) => {
   };
 
   if (offline) return <Offline />;
+
   return (
     <Container>
       <Segment
@@ -227,7 +231,9 @@ const Main = ({ startQuiz }) => {
                   icon="play"
                   labelPosition="left"
                   content={processing ? "Processing..." : "Start"}
-                  onClick={fetchData}
+                  onClick={() => {
+                    fetchData();
+                  }}
                   disabled={!allFieldsSelected || processing}
                 />
               </Item.Extra>

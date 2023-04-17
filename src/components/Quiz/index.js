@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import Alert from "@mui/material/Alert";
+
+import Stack from "@mui/material/Stack";
 import {
   Container,
   Segment,
@@ -10,6 +13,7 @@ import {
   Message,
   Menu,
   Header,
+  Modal,
 } from "semantic-ui-react";
 import he from "he";
 
@@ -17,6 +21,8 @@ import Countdown from "../Countdown";
 import { getLetter } from "../../utils";
 
 const Quiz = ({ data, countdownTime, endQuiz }) => {
+  const [show, setShow] = useState(false);
+  const [agreed, setAgreed] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [userSlectedAns, setUserSlectedAns] = useState(null);
@@ -25,11 +31,20 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
 
   const handleItemClick = (e, { name }) => {
     setUserSlectedAns(name);
+    setShow(false);
+    setAgreed(true);
   };
+  useEffect(() => setShow(false), [agreed]);
 
   const handleNext = () => {
     let point = 0;
-    if (userSlectedAns === he.decode(data[questionIndex].correct_answer)) {
+
+    if (!userSlectedAns) {
+      setShow(true);
+      setAgreed(false);
+    } else if (
+      userSlectedAns === he.decode(data[questionIndex].correct_answer)
+    ) {
       point = 1;
     }
 
@@ -49,11 +64,12 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
         questionsAndAnswers: qna,
       });
     }
-
-    setCorrectAnswers(correctAnswers + point);
-    setQuestionIndex(questionIndex + 1);
-    setUserSlectedAns(null);
-    setQuestionsAndAnswers(qna);
+    if (agreed) {
+      setCorrectAnswers(correctAnswers + point);
+      setQuestionIndex(questionIndex + 1);
+      setUserSlectedAns(null);
+      setQuestionsAndAnswers(qna);
+    }
   };
 
   const timeOver = (timeTaken) => {
@@ -115,16 +131,60 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                   </Menu>
                 </Item.Meta>
                 <Divider />
+                {show ? (
+                  <Stack
+                    sx={{
+                      width: "100%",
+                      position: "absolute",
+                      top: "50%",
+                      left: 0,
+                      margin: "auto",
+                      display: "flex",
+                      alignItems: "center",
+                      height: "79vh",
+                      backgroundColor: "rgba(0,0,0,0.7)",
+                      transform: "translateY(-50%)",
+                    }}
+                    spacing={2}
+                  >
+                    <Alert
+                      sx={{
+                        display: "flex",
+                        width: "100%",
+                        margin: "auto",
+                      }}
+                      severity="error"
+                      action={
+                        <Button
+                          color="inherit"
+                          size="small"
+                          onClick={() => {
+                            setAgreed(true);
+                            setShow(false);
+                          }}
+                        >
+                          Agree
+                        </Button>
+                      }
+                    >
+                      you didn't answer the question
+                    </Alert>
+                  </Stack>
+                ) : (
+                  ""
+                )}
                 <Item.Extra>
                   <Button
                     primary
                     content="Next"
-                    onClick={handleNext}
+                    onClick={() => {
+                      handleNext();
+                    }}
                     floated="right"
                     size="big"
                     icon="right chevron"
                     labelPosition="right"
-                    disabled={!userSlectedAns}
+                    // disabled={!userSlectedAns}
                   />
                 </Item.Extra>
               </Item.Content>
