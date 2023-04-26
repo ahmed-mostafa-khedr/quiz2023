@@ -1,1 +1,19 @@
 @import url(../node_modules/semantic-ui-css/semantic.min.css);
+body {
+  background: url(./Lovepik_com-401736682-black-and-white-graduation-student-silhouette.png);
+  background-position: center;
+  background-size: 50%;
+  background-position-y: 200%;
+  background-repeat: no-repeat;
+}
+.ui.items > .item > .content p:last-child,
+.ui.items > .item > .content p,
+.css-1wc848c-MuiFormHelperText-root.Mui-error,
+.css-1wc848c-MuiFormHelperText-root {
+  position: absolute !important;
+  bottom: -16px !important;
+}
+.next-button:hover,
+.next-button:focus {
+  opacity: 1 !important;
+}

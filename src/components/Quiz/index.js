@@ -21,6 +21,7 @@ import Countdown from "../Countdown";
 import { getLetter } from "../../utils";
 
 const Quiz = ({ data, countdownTime, endQuiz }) => {
+  const [back, setBack] = useState(false);
   const [show, setShow] = useState(false);
   const [agreed, setAgreed] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -31,17 +32,20 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
 
   const handleItemClick = (e, { name }) => {
     setUserSlectedAns(name);
-    setShow(false);
-    setAgreed(true);
+    // setShow(false);
+    // setAgreed(true);
   };
-  useEffect(() => setShow(false), [agreed]);
+
+  // useEffect(() => {
+  //   setShow(false);
+  // }, [agreed]);
 
   const handleNext = () => {
     let point = 0;
 
     if (!userSlectedAns) {
-      setShow(true);
-      setAgreed(false);
+      // setShow(true);
+      // setAgreed(false);
     } else if (
       userSlectedAns === he.decode(data[questionIndex].correct_answer)
     ) {
@@ -64,14 +68,16 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
         questionsAndAnswers: qna,
       });
     }
-    if (agreed) {
-      setCorrectAnswers(correctAnswers + point);
-      setQuestionIndex(questionIndex + 1);
-      setUserSlectedAns(null);
-      setQuestionsAndAnswers(qna);
-    }
+    // if (agreed) {
+    setCorrectAnswers(correctAnswers + point);
+    setQuestionIndex(questionIndex + 1);
+    setUserSlectedAns(null);
+    setQuestionsAndAnswers(qna);
+    // }
   };
-
+  const handleBack = () => {
+    setQuestionIndex(questionIndex - 1);
+  };
   const timeOver = (timeTaken) => {
     return endQuiz({
       totalQuestions: data.length,
@@ -80,7 +86,13 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
       questionsAndAnswers,
     });
   };
-
+  useEffect(() => {
+    if (questionIndex > 0) {
+      setBack(true);
+    } else {
+      setBack(false);
+    }
+  });
   return (
     <Item.Header>
       <Container>
@@ -131,7 +143,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                   </Menu>
                 </Item.Meta>
                 <Divider />
-                {show ? (
+                {/* show ? (
                   <Stack
                     sx={{
                       width: "100%",
@@ -142,7 +154,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                       display: "flex",
                       alignItems: "center",
                       height: "79vh",
-                      backgroundColor: "rgba(0,0,0,0.7)",
+
                       transform: "translateY(-50%)",
                     }}
                     spacing={2}
@@ -156,6 +168,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                       severity="error"
                       action={
                         <Button
+                          primary
                           color="inherit"
                           size="small"
                           onClick={() => {
@@ -172,10 +185,35 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                   </Stack>
                 ) : (
                   ""
-                )}
-                <Item.Extra>
+                ) */}
+                <Item.Extra
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
                   <Button
-                    primary
+                    style={{
+                      marginRight: "74%",
+                    }}
+                    content="Back"
+                    onClick={() => {
+                      handleBack();
+                    }}
+                    floated="left"
+                    size="big"
+                    icon="left chevron"
+                    labelPosition="left"
+                    disabled={back ? false : true}
+                  />
+
+                  <Button
+                    className="next-button"
+                    style={{
+                      backgroundColor: "#4350b0",
+                      color: "#fff",
+                      opacity: "0.85",
+                    }}
                     content="Next"
                     onClick={() => {
                       handleNext();

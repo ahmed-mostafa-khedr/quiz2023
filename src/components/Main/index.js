@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
 import {
   Container,
@@ -9,10 +9,7 @@ import {
   Button,
   Message,
 } from "semantic-ui-react";
-import { render } from "react-dom";
-import ReactFullscreeen from "react-easyfullscreen";
-import mindImg from "../../images/mind.svg";
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import mindImg from "../../logo.png";
 import {
   CATEGORIES,
   NUM_OF_QUESTIONS,
@@ -21,11 +18,15 @@ import {
   COUNTDOWN_TIME,
 } from "../../constants";
 import { shuffle } from "../../utils";
-
+import TextField from "@mui/material/TextField";
 import Offline from "../Offline";
 import mock from "../Quiz/mock.json";
+import { Form } from "semantic-ui-react";
+import { Formik } from "formik";
+import * as Yup from "yup";
 const Main = ({ startQuiz }) => {
-  const handle = useFullScreenHandle();
+  let emailInLocal = localStorage.getItem("email");
+  let passwordInLocal = localStorage.getItem("password");
   const [category, setCategory] = useState("0");
   const [numOfQuestions, setNumOfQuestions] = useState(50);
   const [difficulty, setDifficulty] = useState("0");
@@ -35,6 +36,7 @@ const Main = ({ startQuiz }) => {
     minutes: 59,
     seconds: 59,
   });
+  const inputElement = useRef();
 
   const [processing, setProcessing] = useState(false);
   const [error, setError] = useState(null);
@@ -45,6 +47,9 @@ const Main = ({ startQuiz }) => {
   };
 
   let allFieldsSelected = false;
+  useEffect(() => {
+    inputElement.current.firstChild.click();
+  }, []);
   if (
     category &&
     numOfQuestions &&
@@ -121,14 +126,33 @@ const Main = ({ startQuiz }) => {
       <Segment
         style={{
           marginTop: "100px",
+          overflow: "hidden",
         }}
       >
         <Item.Group divided>
           <Item>
-            <Item.Image src={mindImg} />
+            <img
+              style={{
+                width: "300px",
+                marginRight: "20px",
+                height: "260px",
+                borderRadius: "20px",
+              }}
+              alt="logo"
+              src={mindImg}
+            />
             <Item.Content>
               <Item.Header>
                 <h1> Quiz 2023 </h1>
+                <h6
+                  style={{
+                    padding: "0",
+                    margin: "0",
+                    color: "rgb(0,0,0,0.6)",
+                  }}
+                >
+                  <u> Please Enter Your Valid Email and Start .</u>
+                </h6>
               </Item.Header>
               {/*error && (
                 <Message error onDismiss={() => setError(null)}>
@@ -137,6 +161,117 @@ const Main = ({ startQuiz }) => {
                 </Message>
               )*/}
               <Divider />
+              <Formik
+                initialValues={{ email: "", password: "" }}
+                validationSchema={Yup.object({
+                  email: Yup.string()
+                    .email(" Invalid Email")
+                    .required("Email Required"),
+                  password: Yup.string().required("Password Required"),
+                })}
+                onSubmit={(values, { setSubmitting }) => {
+                  setTimeout(() => {
+                    if (
+                      values.email === "test@email.com" &&
+                      values.password === "@12345"
+                    ) {
+                      fetchData();
+                      setSubmitting(false);
+                    } else {
+                      alert("Invalid Email Or Password");
+                    }
+                  }, 1500);
+                }}
+              >
+                {(formik) => (
+                  <Form onSubmit={formik.handleSubmit}>
+                    <div style={{ display: "flex", marginBottom: "20px" }}>
+                      <div>
+                        <Form.Field required>
+                          <label>Email</label>
+                          <TextField
+                            ref={inputElement}
+                            error={
+                              formik.touched.email && formik.errors.email
+                                ? true
+                                : false
+                            }
+                            id="email"
+                            helperText={formik.errors.email}
+                            style={{
+                              opacity: "0.6",
+                              width: "378px",
+                              marginRight: "20px",
+                            }}
+                            type="email"
+                            placeholder="example@example.com"
+                            {...formik.getFieldProps("email")}
+                          />
+                        </Form.Field>
+                        {/*formik.touched.email && formik.errors.email ? (
+                        <p style={{ color: "#e60000" }}>
+                      {formik.errors.email
+                        </p>
+                        ) : null}
+                      */}
+                      </div>
+                      <div>
+                        <Form.Field required>
+                          <label>Password</label>
+                          <TextField
+                            error={
+                              formik.touched.password && formik.errors.password
+                                ? true
+                                : false
+                            }
+                            id="password"
+                            helperText={formik.errors.password}
+                            style={{ opacity: "0.6", width: "378px" }}
+                            type="password"
+                            placeholder="***********"
+                            {...formik.getFieldProps("password")}
+                          />
+                        </Form.Field>{" "}
+                        {/*formik.touched.password && formik.errors.password ? (
+                          <p style={{ color: "#e60000" }}>
+                            {formik.errors.password}
+                          </p>
+                        ) : null*/}
+                      </div>
+                    </div>
+                    <Divider />
+
+                    <Button
+                      className="next-button"
+                      style={{
+                        opacity: "0.97",
+                        marginTop: "10px",
+                        width: "200px",
+                        height: "50px",
+                        backgroundColor: "#4350af",
+                        boxShadow: "2px 2px 5px #000",
+
+                        // left: "50%",
+                        // transform: "translateX(-50%)",
+                      }}
+                      type="submit"
+                      primary
+                      size="big"
+                      icon="play"
+                      labelPosition="left"
+                      content={processing ? "Processing..." : "Start"}
+                      disabled={
+                        (formik.touched.email && formik.errors.email) ||
+                        (formik.touched.password && formik.errors.password) ||
+                        processing
+                          ? true
+                          : false
+                      }
+                    />
+                  </Form>
+                )}
+              </Formik>
+
               <Item.Meta>
                 {/* 
               <Dropdown
@@ -218,25 +353,6 @@ const Main = ({ startQuiz }) => {
                 />
                 */}
               </Item.Meta>
-              <Divider />
-              <Item.Extra>
-                <Button
-                  style={{
-                    marginTop: "20px",
-                    width: "200px",
-                    height: "50px",
-                  }}
-                  primary
-                  size="big"
-                  icon="play"
-                  labelPosition="left"
-                  content={processing ? "Processing..." : "Start"}
-                  onClick={() => {
-                    fetchData();
-                  }}
-                  disabled={!allFieldsSelected || processing}
-                />
-              </Item.Extra>
             </Item.Content>
           </Item>
         </Item.Group>

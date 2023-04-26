@@ -16,28 +16,35 @@ const App = () => {
   const [isQuizCompleted, setIsQuizCompleted] = useState(false);
   const [resultData, setResultData] = useState(null);
   const handle = useFullScreenHandle();
-
-  useEffect(() => {
-    // define a custom handler function
-    // for the contextmenu event
-    const handleContextMenu = (e) => {
-      // prevent the right-click menu from appearing
-      e.preventDefault();
-    };
-
-    // attach the event listener to
-    // the document object
-    document.addEventListener("contextmenu", handleContextMenu);
-
-    // clean up the event listener when
-    // the component unmounts
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("fullscreenchange", (event) => {
+  //     if (document.fullscreenElement) {
+  //       console.log("fulllllllll");
+  //     } else {
+  //       document.documentElement.webkitRequestFullScreen();
+  //     }
+  //   });
+  // });
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
+  //   const key = (e) => {
+  //     e.preventDefault();
+  //   };
+  //   document.addEventListener("contextmenu", handleContextMenu);
+  //   document.addEventListener("keydown", key);
+  //   // clean up the event listener when
+  //   // the component unmounts
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //     document.removeEventListener("keydown", key);
+  //   };
+  // }, []);
   const startQuiz = (data, countdownTime) => {
     setLoading(true);
     handle.enter();
+
     setCountdownTime(countdownTime);
 
     setTimeout(() => {
@@ -56,6 +63,8 @@ const App = () => {
       setResultData(resultData);
       setLoading(false);
     }, 2000);
+    handle.exit();
+    document.exitFullscreen();
   };
 
   const replayQuiz = () => {

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Menu, Button } from "semantic-ui-react";
+import Logo from "./logo-header.png";
 
 const Header = () => {
   const [promptEvent, setPromptEvent] = useState(null);
   const [appAccepted, setAppAccepted] = useState(false);
 
-  let isAppInstalled = false;
+  // let isAppInstalled = false;
 
   // if (window.matchMedia("(display-mode: standalone)").matches || appAccepted) {
   //   isAppInstalled = true;
@@ -29,10 +30,20 @@ const Header = () => {
   // };
 
   return (
-    <Menu stackable inverted size="massive">
+    <Menu stackable inverted size="small" style={{ borderRadius: "0px" }}>
       <Menu.Item header>
-        <h1 style={{ color: "#fff" }}>2023 Exam</h1>
-        <h6 style={{ color: "#ccc", marginLeft: "10px" }}>T.I.T.Solutions</h6>
+        <img alt="logo" src={Logo} style={{ width: "120px" }} />
+        {/*<h6
+          style={{
+            color: "#ccc",
+            marginBottom: "-30px",
+            marginRight: "-15px",
+            fontSize: "10px",
+            fontFamily: "initial",
+          }}
+        >
+          &copy; T.I.T.Solutions
+        </h6> */}
       </Menu.Item>
       {/*promptEvent && !isAppInstalled && (
         <Menu.Item position="right">
@@ -50,3 +61,7 @@ const Header = () => {
 };
 
 export default Header;
+
+/*
+ 
+*/
