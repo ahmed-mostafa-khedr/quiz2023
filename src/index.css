@@ -17,3 +17,8 @@ body {
 .next-button:focus {
   opacity: 1 !important;
 }
+@media (max-width:767px){
+  .ui.divided.items>.item:first-child{
+    margin-left:20px
+  }
+}

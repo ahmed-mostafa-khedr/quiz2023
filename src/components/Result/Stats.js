@@ -18,24 +18,26 @@ const Stats = ({
 
   return (
     <Segment>
-      <Header as="h1" textAlign="center" block>
+      {/*<Header as="h1" textAlign="center" block>
         {remarks}
-      </Header>
-      <Header as="h2" textAlign="center" block>
-        Grade: {grade}
-      </Header>
+  </Header>
+  <Header as="h2" textAlign="center" block>
+    Grade: {grade}
+  </Header>
+*/}
       <Header as="h3" textAlign="center" block>
         Total Questions: {totalQuestions}
       </Header>
-      <Header as="h3" textAlign="center" block>
+      {/* <Header as="h3" textAlign="center" block>
         Correct Answers: {correctAnswers}
       </Header>
       <Header as="h3" textAlign="center" block>
-        Your Score: {score}%
+      Your Score: {score}%
       </Header>
       <Header as="h3" textAlign="center" block>
         Passing Score: 60%
       </Header>
+*/}
       <Header as="h3" textAlign="center" block>
         Time Taken:{" "}
         {`${Number(hours)}h ${Number(minutes)}m ${Number(seconds)}s`}

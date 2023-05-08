@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
+import "./main.css"
 import {
   Container,
   Segment,
@@ -185,7 +186,7 @@ const Main = ({ startQuiz }) => {
               >
                 {(formik) => (
                   <Form onSubmit={formik.handleSubmit}>
-                    <div style={{ display: "flex", marginBottom: "20px" }}>
+                    <div style={{ display: "flex", marginBottom: "20px" }} class="form-inp">
                       <div>
                         <Form.Field required>
                           <label>Email</label>

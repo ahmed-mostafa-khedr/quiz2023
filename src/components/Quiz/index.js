@@ -29,10 +29,19 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
   const [userSlectedAns, setUserSlectedAns] = useState(null);
   const [questionsAndAnswers, setQuestionsAndAnswers] = useState([]);
   const [timeTaken, setTimeTaken] = useState(null);
+  const [not, setNot] = useState([]);
+  const [noAns, setNoAns] = useState(true);
+  const [dataOptions, setDataOptions] = useState([]);
 
+  // useEffect(() => {
+  //   setNot(questionsAndAnswers.filter((i) => i.user_answer == null));
+  //   setNoAns(not.length + 1);
+  //   setDataOptions((dataOptions) => [...dataOptions, data[noAns]]);
+  // }, [questionIndex]);
+  // console.log("length :" + noAns, dataOptions);
   const handleItemClick = (e, { name }) => {
     setUserSlectedAns(name);
-    // setShow(false);
+    setNoAns(false);
     // setAgreed(true);
   };
 
@@ -42,10 +51,9 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
 
   const handleNext = () => {
     let point = 0;
-
     if (!userSlectedAns) {
-      // setShow(true);
-      // setAgreed(false);
+      point = 2;
+      // setNoAns((prev) => [...prev, questionIndex]);
     } else if (
       userSlectedAns === he.decode(data[questionIndex].correct_answer)
     ) {
@@ -55,6 +63,28 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
     const qna = questionsAndAnswers;
     qna.push({
       question: he.decode(data[questionIndex].question),
+      options: (
+        <Menu vertical fluid size="massive">
+          {data[questionIndex].options.map((option, i) => {
+            const letter = getLetter(i);
+            const decodedOption = he.decode(option);
+
+            return (
+              <Menu.Item
+                key={decodedOption}
+                name={decodedOption}
+                active={userSlectedAns === letter}
+                // disabled={noAns==false && false}
+                onClick={handleItemClick}
+                style={{ fontSize: "13px", fontWeight: "bold" }}
+              >
+                <b style={{ marginRight: "8px" }}>{letter}</b>
+                {decodedOption}
+              </Menu.Item>
+            );
+          })}
+        </Menu>
+      ),
       user_answer: userSlectedAns,
       correct_answer: he.decode(data[questionIndex].correct_answer),
       point,
@@ -63,6 +93,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
     if (questionIndex === data.length - 1) {
       return endQuiz({
         totalQuestions: data.length,
+        totalOptions: data.options,
         correctAnswers: correctAnswers + point,
         timeTaken,
         questionsAndAnswers: qna,
@@ -93,6 +124,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
       setBack(false);
     }
   });
+
   return (
     <Item.Header>
       <Container>
@@ -133,6 +165,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                           key={decodedOption}
                           name={decodedOption}
                           active={userSlectedAns === decodedOption}
+                          // disabled={noAns==false && false}
                           onClick={handleItemClick}
                         >
                           <b style={{ marginRight: "8px" }}>{letter}</b>
