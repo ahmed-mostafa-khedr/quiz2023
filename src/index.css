@@ -17,8 +17,19 @@ body {
 .next-button:focus {
   opacity: 1 !important;
 }
-@media (max-width:767px){
-  .ui.divided.items>.item:first-child{
-    margin-left:20px
+.ui.vertical.menu .active.item {
+  background: #4350b099;
+  box-shadow: 0 0 2px #fff;
+  color: #fff;
+}
+.ui.checkbox input:checked ~ .box:after,
+.ui.checkbox input:checked ~ label:after {
+  color: #fff !important;
+  background-color: #4350b0;
+  border-radius: 3px;
+}
+@media (max-width: 767px) {
+  .ui.divided.items > .item:first-child {
+    margin-left: 50px;
   }
 }

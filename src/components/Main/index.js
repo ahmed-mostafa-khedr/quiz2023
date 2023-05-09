@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
-import "./main.css"
+import "./main.css";
 import {
   Container,
   Segment,
@@ -176,7 +176,47 @@ const Main = ({ startQuiz }) => {
                       values.email === "test@email.com" &&
                       values.password === "@12345"
                     ) {
-                      fetchData();
+                      // fetchData();
+                      setTimeout((data) => {
+                        console.log(data);
+                        const { response_code, results } = mock;
+
+                        if (response_code === 1) {
+                          const message = (
+                            <p>
+                              The API doesn't have enough questions for your
+                              query. (Ex. Asking for 50 Questions in a Category
+                              that only has 20.)
+                              <br />
+                              <br />
+                              Please change the{" "}
+                              <strong>No. of Questions</strong>,{" "}
+                              <strong>Difficulty Level</strong>, or{" "}
+                              <strong>Type of Questions</strong>.
+                            </p>
+                          );
+
+                          setProcessing(false);
+                          setError({ message });
+
+                          return;
+                        }
+
+                        results.forEach((element) => {
+                          element.options = shuffle([
+                            element.correct_answer,
+                            ...element.incorrect_answers,
+                          ]);
+                        });
+
+                        setProcessing(false);
+                        startQuiz(
+                          results,
+                          countdownTime.hours +
+                            countdownTime.minutes +
+                            countdownTime.seconds
+                        );
+                      }, 1000);
                       setSubmitting(false);
                     } else {
                       alert("Invalid Email Or Password");
@@ -186,7 +226,10 @@ const Main = ({ startQuiz }) => {
               >
                 {(formik) => (
                   <Form onSubmit={formik.handleSubmit}>
-                    <div style={{ display: "flex", marginBottom: "20px" }} class="form-inp">
+                    <div
+                      style={{ display: "flex", marginBottom: "20px" }}
+                      class="form-inp"
+                    >
                       <div>
                         <Form.Field required>
                           <label>Email</label>

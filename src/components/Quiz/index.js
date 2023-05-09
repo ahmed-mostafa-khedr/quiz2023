@@ -14,6 +14,7 @@ import {
   Menu,
   Header,
   Modal,
+  Checkbox,
 } from "semantic-ui-react";
 import he from "he";
 
@@ -31,7 +32,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
   const [timeTaken, setTimeTaken] = useState(null);
   const [not, setNot] = useState([]);
   const [noAns, setNoAns] = useState(true);
-  const [dataOptions, setDataOptions] = useState([]);
+  const [disable, setDisabled] = useState(false);
 
   // useEffect(() => {
   //   setNot(questionsAndAnswers.filter((i) => i.user_answer == null));
@@ -71,6 +72,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
 
             return (
               <Menu.Item
+                id={decodedOption}
                 key={decodedOption}
                 name={decodedOption}
                 active={userSlectedAns === letter}
@@ -78,8 +80,15 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                 onClick={handleItemClick}
                 style={{ fontSize: "13px", fontWeight: "bold" }}
               >
-                <b style={{ marginRight: "8px" }}>{letter}</b>
-                {decodedOption}
+                <Checkbox
+                  label={
+                    <label style={{ width: "100%" }}>
+                      {" "}
+                      <b style={{ marginRight: "8px" }}>{letter}</b>
+                      {decodedOption}
+                    </label>
+                  }
+                />
               </Menu.Item>
             );
           })}
@@ -99,14 +108,17 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
         questionsAndAnswers: qna,
       });
     }
+
     // if (agreed) {
     setCorrectAnswers(correctAnswers + point);
     setQuestionIndex(questionIndex + 1);
+    setShow(userSlectedAns);
     setUserSlectedAns(null);
     setQuestionsAndAnswers(qna);
     // }
   };
   const handleBack = () => {
+    setUserSlectedAns(show);
     setQuestionIndex(questionIndex - 1);
   };
   const timeOver = (timeTaken) => {

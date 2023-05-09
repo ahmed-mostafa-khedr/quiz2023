@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Button, Table } from "semantic-ui-react";
 
 const QNA = ({ questionsAndAnswers }) => {
+  // questionsAndAnswers.length = 10;
   return (
     <>
       <Table celled striped selectable size="large">
@@ -23,13 +24,18 @@ const QNA = ({ questionsAndAnswers }) => {
                   <Table.Cell>{i + 1}</Table.Cell>
                   <Table.Cell>{item.question} </Table.Cell>
                   {/*<Table.Cell>{item.user_answer}</Table.Cell>*/}
-                  <Table.Cell>{item.options}</Table.Cell>
+                  <Table.Cell>
+                    <span>
+                      <u>choose one of the following ans.</u>
+                    </span>
+                    {item.options}
+                  </Table.Cell>
                   {/*<Table.Cell></Table.Cell>*/}
                 </Table.Row>
               )
           )}
         </Table.Body>
-      </Table>{" "}
+      </Table>
     </>
   );
 };
