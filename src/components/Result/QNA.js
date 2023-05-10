@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, Table } from "semantic-ui-react";
+import { Button, Checkbox, Menu, Radio, Table } from "semantic-ui-react";
 
 const QNA = ({ questionsAndAnswers }) => {
   // questionsAndAnswers.length = 10;
+
   return (
     <>
       <Table celled striped selectable size="large">
@@ -28,7 +29,36 @@ const QNA = ({ questionsAndAnswers }) => {
                     <span>
                       <u>choose one of the following ans.</u>
                     </span>
-                    {item.options}
+                    <form>
+                      <Menu vertical fluid size="massive">
+                        {item.options.props.children.map((item, i) => (
+                          <Menu.Item
+                            key={i}
+                            // disabled={noAns==false && false}
+
+                            style={{ fontSize: "13px", fontWeight: "bold" }}
+                          >
+                            <input
+                              type="radio"
+                              id={item.key}
+                              name="fav_language"
+                              value={item.key}
+                            />
+                            <label
+                              htmlFor={item.key}
+                              style={{
+                                fontWeight: "bold",
+                                marginLeft: "5px",
+                              }}
+                            >
+                              {" "}
+                              <label htmlFor={item.key}>{item.key}</label>
+                            </label>
+                            <br></br>
+                          </Menu.Item>
+                        ))}
+                      </Menu>
+                    </form>
                   </Table.Cell>
                   {/*<Table.Cell></Table.Cell>*/}
                 </Table.Row>

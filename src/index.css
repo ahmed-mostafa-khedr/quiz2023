@@ -33,3 +33,40 @@ body {
     margin-left: 50px;
   }
 }
+.ui.radio.checkbox input:checked ~ .box:after,
+.ui.radio.checkbox input:checked ~ label:after {
+  background-color: #4350b0 !important;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  left: -4px;
+  top: -3px;
+}
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  top: 0px;
+  left: -1px;
+  position: relative;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #0000007a;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  top: 0px;
+  left: -1px;
+  position: relative;
+  background-color: #4350b0;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #4350b0;
+}

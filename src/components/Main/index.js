@@ -228,7 +228,7 @@ const Main = ({ startQuiz }) => {
                   <Form onSubmit={formik.handleSubmit}>
                     <div
                       style={{ display: "flex", marginBottom: "20px" }}
-                      class="form-inp"
+                      className="form-inp"
                     >
                       <div>
                         <Form.Field required>

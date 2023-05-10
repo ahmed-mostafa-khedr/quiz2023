@@ -30,7 +30,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
   const [userSlectedAns, setUserSlectedAns] = useState(null);
   const [questionsAndAnswers, setQuestionsAndAnswers] = useState([]);
   const [timeTaken, setTimeTaken] = useState(null);
-  const [not, setNot] = useState([]);
+  const [ans, setans] = useState([]);
   const [noAns, setNoAns] = useState(true);
   const [disable, setDisabled] = useState(false);
 
@@ -98,6 +98,14 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
       correct_answer: he.decode(data[questionIndex].correct_answer),
       point,
     });
+    localStorage.setItem(
+      "userAnswer",
+      JSON.stringify(qna.map((item) => item.user_answer))
+    );
+    localStorage.setItem("userSelectAnswer", JSON.stringify(userSlectedAns));
+    const d = JSON.parse(localStorage.getItem("userAnswer"));
+    const ds = JSON.parse(localStorage.getItem("userSelectAnswer"));
+    console.log(qna.map((i) => i.user_answer));
 
     if (questionIndex === data.length - 1) {
       return endQuiz({
@@ -167,11 +175,13 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                     <h3>Please choose one of the following answers:</h3>
                   </Item.Description>
                   <Divider />
+
                   <Menu vertical fluid size="massive">
                     {data[questionIndex].options.map((option, i) => {
                       const letter = getLetter(i);
                       const decodedOption = he.decode(option);
-
+                      const arr = new Set([decodedOption]);
+                      console.log(Array.from(arr));
                       return (
                         <Menu.Item
                           key={decodedOption}

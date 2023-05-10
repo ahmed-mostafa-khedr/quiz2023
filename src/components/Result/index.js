@@ -26,18 +26,28 @@ const Result = ({
   useEffect(() => {
     handle.exit();
   });
+
+  // console.log(
+  //   questionsAndAnswers.map((item) =>
+  //     item.options.props.children.map((item) => item.key)
+  //   )
+  // );
   return (
     <Container style={{ paddingBottom: "25px" }}>
       {!thanx ? (
         <>
           {" "}
-          <Menu fluid widths={1}>
-            <Menu.Item
-              name="You did not answer these questions "
-              active={activeTab === "QNA"}
-            />
-          </Menu>
-          <QNA questionsAndAnswers={questionsAndAnswers} />
+          {questionsAndAnswers.length >= 1 && (
+            <>
+              <Menu fluid widths={1}>
+                <Menu.Item
+                  name="You did not answer these questions "
+                  active={activeTab === "QNA"}
+                />
+              </Menu>
+              <QNA questionsAndAnswers={questionsAndAnswers} />
+            </>
+          )}
           <br />
           <Modal
             onClose={() => setOpen(false)}
