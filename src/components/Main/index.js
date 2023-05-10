@@ -173,8 +173,8 @@ const Main = ({ startQuiz }) => {
                 onSubmit={(values, { setSubmitting }) => {
                   setTimeout(() => {
                     if (
-                      values.email === "test@email.com" &&
-                      values.password === "@12345"
+                      values.email === "ahmed.mostafa@titegypt.com" &&
+                      values.password === "xb$Ie726F^$6"
                     ) {
                       // fetchData();
                       setTimeout((data) => {

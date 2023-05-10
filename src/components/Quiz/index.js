@@ -49,7 +49,8 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
   // useEffect(() => {
   //   setShow(false);
   // }, [agreed]);
-
+  const d = JSON.parse(localStorage.getItem("userAnswer"));
+  const ds = JSON.parse(localStorage.getItem("userSelectAnswer"));
   const handleNext = () => {
     let point = 0;
     if (!userSlectedAns) {
@@ -103,8 +104,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
       JSON.stringify(qna.map((item) => item.user_answer))
     );
     localStorage.setItem("userSelectAnswer", JSON.stringify(userSlectedAns));
-    const d = JSON.parse(localStorage.getItem("userAnswer"));
-    const ds = JSON.parse(localStorage.getItem("userSelectAnswer"));
+
     console.log(qna.map((i) => i.user_answer));
 
     if (questionIndex === data.length - 1) {
@@ -186,7 +186,7 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                         <Menu.Item
                           key={decodedOption}
                           name={decodedOption}
-                          active={userSlectedAns === decodedOption}
+                          active={userSlectedAns == decodedOption}
                           // disabled={noAns==false && false}
                           onClick={handleItemClick}
                         >
