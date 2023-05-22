@@ -130,6 +130,500 @@
         "8.0 L",
         "Cannot be determined since his blood pressure was not checked"
       ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "It is important to know more about how water is distributed between the various compartments in our bodies.  The volumes of some of the compartments can be measured directly by using the dilution method in the physiology lab. Which of the following is not true concerning measuring fluid volumes in different compartments?",
+      "correct_answer": "Intracellular Volume is determined directly by using labeled K since it is an intracellular ion",
+      "incorrect_answers": [
+        "Total Body Water is determined by using D20 or radioactive/heavy water (tritiated)",
+        "Inulin and Sucrose are effectively used to determine the ECF volume",
+        "To determine the Plasma Volume we use radioactive albumin",
+        "Interstitial Volume and the ICF cannot be determined directly"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "As a part of experiment you are measuring a skeletal muscle cell’s resting membrane potential. First, you administer a solution with a high concentration of Na and for this reason you increase the concentration of Na in the extracellular compartment, but after this you don’t find any significant change in the resting membrane potential. Then, you administer a solution with a high concentration of potassium. What do you expect to happen to the cell membrane potential?",
+      "correct_answer": "Depolarize",
+      "incorrect_answers": [
+        "Hyperpolarize",
+        "First depolarize and then hyperpolarize",
+        "First hyperpolarize and then depolarize.",
+        "No change in the resting membrane potential."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "As a part of a research project in which you are investigating the properties of an action potential, you administer to a patient a drug that blocks the voltage gated Na channels. When you start measuring the time that it takes to complete each phase of the action potential, you note that you have increased the time that the cell takes in an absolute refractory period. What do you expect to happen to the frequency of actions potentials in this cell?",
+      "correct_answer": "Decrease",
+      "incorrect_answers": [
+        "Increase.",
+        "First increase then decrease.",
+        "Normal frequency.",
+        "None of them."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "As a part of a research project, you are studying the synapses between neurons. Your main objective is to identify the effect of different ions on synaptic transmission so as to be able to develop an effective muscle relaxant. What do you expect to find if you inject an hyperchloremic solution into the synaptic junction between neurons?",
+      "correct_answer": " Transient hyperpolarization.",
+      "incorrect_answers": [
+        "Transient depolarization",
+        "Transient hyperpolarization first and then depolarization.",
+        "Increased transmission in the synapses",
+        "Transient depolarization first and then hyperpolarization "
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "As a part of an investigation, you want to determine the importance of the sympathetic transmission at the level of the heart and most specifically its action on the heart rate. In order to do this, you connect an electrode to the heart of a mouse for continuous monitoring. Which of the following will lead to a decrease in the heart rate by decreasing the sympathetic stimulus?",
+      "correct_answer": "A tyrosine restriction diet.",
+      "incorrect_answers": [
+        "Administering a high dose of dopamine b-hydroxylase.",
+        "Administering a high dose of dopamine.",
+        "Administering a drug that blocks the reuptake of NE.",
+        "A Calcium channel blocker."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "An antiepileptic drug that is channel blocker to be developed by a pharmaceutical company. Dr Z. who is the head of the research team has been working on different channels and studying their mechanisms of action in order to make the drug very effective. Which of the following is a true property of channels?",
+      "correct_answer": "Voltage gated channels respond to the changes in membrane depolarization.",
+      "incorrect_answers": [
+        "Channel conductance is directly proportional to closed channels.",
+        "Charged molecules pass through the channels at a faster rate.",
+        "Ungated potassium channels are not a good target for the experiment because most cells lack them.",
+        "Ligand gated channels respond to the changes in membrane depolarization."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "A neurosurgeon is conducting a research. He is interested in determining the way to affect the conduction of action potential (AP) along the nerve in order to present a surgical procedure for approval by the college of surgeons. Making some changes increase the conduction of action potential while reversing these changes decrease conduction. Which of the following is true?",
+      "correct_answer": "Increasing the myelin fibers will increase the rate of conduction of AP.",
+      "incorrect_answers": [
+        "The size of the fiber has nothing to do with conduction of AP.",
+        "Unmyelinated fibers have a faster rate of conduction compared to the myelinated fibers.",
+        "The greater the diameter of a cell the slower the conduction velocity.",
+        "None of the above is correct."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "An amino acid contains both amine and carboxyl functional groups. They perform important roles in human physiology. A researcher‘s experiment is based on their ability to act as neurotransmitters. After inducing muscular rigidity in a rat, he injected an amino acid to the interneural space, which leads to subsequent relaxation of the muscle. Which of the following is the injected amino acid?",
+      "correct_answer": "Glycine.",
+      "incorrect_answers": ["TAspartate.", "Glutamate.", "GABA.", " Lysine."]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": " Sildenafil citrate is used to treat male erectile dysfunction.It works by making more cGMP available when it inhibits phosphodiesterase. However it depends on the nitric oxide (NO) released from the nerve endings in the endothelial cells. Which of the following is true about NO?",
+      "correct_answer": "It is an inhibitory neurotransmitter in the central and enteric nervous system.",
+      "incorrect_answers": [
+        "It is packaged in vesicles.",
+        "It is released by exocytosis.",
+        "It needs a transporter because it is not lipid soluble.",
+        "It uses cAMP as a second messenger."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "A 32 year old man is undergoing an electromyography.  He has no recent complaints except for a slight twitch in his right hand.  During stimulation of his supinator and pronator teres, you notice a slower contraction than normal.  Physical examination shows BP: 112/88mmHg, PR: 88b/m, RR: 14 breaths/m, Temp: 98.7F.  His muscle biopsy shows an increase in the mass of the red muscle fibers. Urine analysis reveals a reddish discoloration of the urine. This patient is most likely a; ",
+      "correct_answer": "Long distance runner.",
+      "incorrect_answers": [
+        "Short distance runner.",
+        "Patient with TB taking rifampin.",
+        "Light Weight lifter.",
+        "Sickle cell disease patient."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "An 8 year old boy steps up to bat at the boys and girls club baseball tournament.  When he swings his bat, he utilizes more than 2 muscle groups.  At the ultrastructural level of his myofibrils, there is no change in his A band of the sarcomere and the I band shortens.  The changes observed are most likely due to changes in which of the following? ",
+      "correct_answer": "Sarcoplasmic reticulum.",
+      "incorrect_answers": [
+        "Pre-junctional neuromuscular junction receptors.",
+        "Action potentials in the long thoracic nerve.",
+        "T10-T12 spinal roots.",
+        "Post synaptic parasympathetics."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "A physiologist is studying the mechanism of contraction skeletal muscles, cardiac muscles and also smooth muscles. He concluded that though there are a lot of similarities among them, there still exist some differences among them. Which of the following was observed by the physiologist during the experiment?",
+      "correct_answer": "They all contain actin and myosin fibers.",
+      "incorrect_answers": [
+        "They all have high ATPase activity.",
+        "They are all striated.",
+        "Sarcoplasmic reticulum is not present in smooth muscles.",
+        "Voltage gated calcium channels are a part of all of them."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "During an experiment in the physiology lab, a dead frog is being tested for the development of tension.  First, there is a 2g weight suspended on the gastrocnemius.  Subsequently, a notable increase in muscle length was observed.  This process is responsible for which of the following? ",
+      "correct_answer": "Passive tension.",
+      "incorrect_answers": [
+        "Muscle contraction.",
+        "TActive tension.",
+        "Total tension.",
+        "Recruitment."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "A neuro-physiologist got to his physiology lab and found out that one of the rats that he uses for research is dead. To the amazement of one of the students; the dead rat's muscles have however become very stiff. The professor told the students that the stiffness is due to",
+      "correct_answer": "Failure of the cross-bridges to dissociate from actin.",
+      "incorrect_answers": [
+        "Availability of all the tropomyosin sites.",
+        "Ca release from the endoplasmic reticulum.",
+        "Precipitation of Calcium in the blood vessels.",
+        "Breaking of the actin and cross-bridges binding ."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "A patient diagnosed with an MI has been referred for CABG because his coronary angiogram showed 50% occlusion of a segment of the LAD and 73% occlusion of the left main.  In the LAD what would the effect of the extent of occlusion have on the resistance in this segment of the vessel?",
+      "correct_answer": "increase 16 fold.",
+      "incorrect_answers": ["double.", "triple.", "quadruple.", "no change."]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 55 y/o male patient presents to the hospital with a vague symptoms. He complained of weakness, headaches, fatigue, visual disturbances and itching sometimes when he takes a shower.  He has no other complaints.  On further questioning you find that he is an “adrenaline junkie” and enjoys parasailing, bungee jumping, hang gliding, and sky diving.  He also enjoys mountain climbing and he spent the last few months in the Rockies.  On examination you find a BP 160/90 mmHg and a pulse of 90/min.  He is anxious to find out what is wrong with him because he has reduced his baths to once a week due to the discomfort.  What is the most likely explanation for his elevated BP?",
+      "correct_answer": "Increased vessel length.",
+      "incorrect_answers": [
+        "decrease in vessel radius.",
+        "increase in vessel radius.",
+        "Increase in flow.",
+        "Increase in laminar flowno change."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A patient presents to the physician for a routine check up and is found to have a BP of 140/90 and a heart rate of 60/min.  You find that the O2 consumption of the lung is 300 ml/min and the pulmonary venous O2 content is 20 vol% and the pulmonary arterial O2 content is 15 vol%.  Calculate the stroke volume.",
+      "correct_answer": "100ml.",
+      "incorrect_answers": ["50ml.", "60ml.", "65ml.", "70ml."]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A pregnant lady presents to the hospital with sever chest pain and breathlessness.  She gives a past history of long term oral contraceptive use and Doppler USG shows an extensive DVT in the lower limb vein. On further evaluation you find 4 emboli blocking a segment of the pulmonary artery providing a resistance of 2 units at each point.  Which of the following is a true statement concerning the patient’s pulmonary circulation?",
+      "correct_answer": "flow decreases equally at all points .",
+      "incorrect_answers": [
+        "flow down steam increases.",
+        "pressure downstream increases.",
+        "total resistance is 2.",
+        "total resistance is ½."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A patient presents to the hospital due to abdominal discomfort in the umbilical and epigastric region.  Pain has no radiation and no relation with food.  There is no relief with analgesics. Patient has a history of GERD and was using Omeprazole regularly until 2 weeks ago when he ran out of his prescription while he was on vacation.  On examination a pusatile mass is palpated in the epigastric and umbilical region.  A bruit is heard on auscultation. What is a true statement about this case?",
+      "correct_answer": "The wall tension in the affected part is increased",
+      "incorrect_answers": [
+        "The patient has Gastric outlet obstruction and flow through the gastric vasculature is compromised.",
+        "The patient has hemorrhagic pancreatitis and the blood flow just distal to the obstruction is diminished.",
+        "The patient has peptic ulcer disease and blood supply to the ulcerated area is diminished.",
+        "The patient will probably have a positive VDRL."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "While on rounds an observant medical student watching the monitors realizes that there is an increase in his patient’s Blood Pressure as the patient breathes.  What best explains what is going on in this patient?",
+      "correct_answer": "There is more blood entering the left heart on expiration and increasing EDV",
+      "incorrect_answers": [
+        "An increase in heart rate during expiration.",
+        "There should be no change in blood pressure.",
+        "Increased thoracic pressure on expiration increases CO significantly by helping the heart push out more blood.",
+        "Decreased thoracic pressure during inspiration brings more blood into the right heart."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "Which of the following is a true statement about blood flow in a patient running a marathon?",
+      "correct_answer": "Increase in blood flow to the brain can be seen if the patient has a very low PO2",
+      "incorrect_answers": [
+        "the heart maintains oxygenation during exercise by increasing O2 extraction from the blood.",
+        "resting skeletal muscle  blood flow by increasing vasodilatory metabolites.",
+        "exercising skeletal muscle maintains blood flow by increasing or decreasing α adrenergic activity.",
+        "None of the above."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A pharmaceutical company is doing a research. The major interest is in developing a drug that can be used to slow down heart rates in people with arrhythmias. The drug is in the process of being approved by the FDA. Which of the following can be the mechanism of action of the drug in question?",
+      "correct_answer": "It blocks the funny Na channel in the SA nodal cells",
+      "incorrect_answers": [
+        "It blocks Potassium channels and therefore prolongs phase 0 in ventricular fibers.",
+        "It prolongs phase 0 by blocking the voltage gated slow Na channels in ventricular fibers.",
+        "It decreases the permeability of K channels in the ventricular fibers.",
+        "It increases the conductance of Ca channels in the SA nodal cells."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "During a laboratory session, every student was given two ventricular fibers to study physiology of action potentials. One is from a rat and the other from a rabbit. A student told his physiology professor that he is sure that one of the specimens given to him is not from a ventricular fiber but rather from a specialized cardiac cell. He had the courage to challenge his professor because he observed that;",
+      "correct_answer": "the specimen in question has a channel that opens only when the cell repolarizes and closes when the cell depolarizes",
+      "incorrect_answers": [
+        "both specimens have plateaus in their action potential.",
+        "the specimen in question has a very stable phase 4.",
+        "the specimen in question does not have a K channel.",
+        "both specimens have similar phase 0 which is caused by opening of Na channels."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "Both the sympathetic and the parasympathetic systems have significant effects on the regulation of heart rate. Which of the following is true concerning their actions?",
+      "correct_answer": "Sympathetics cause increased funny current and increased calcium channels",
+      "incorrect_answers": [
+        "Parasympathetics depolarizes the cell by increasing K conductance.",
+        "Parasympathetics inhibits the ability of the AV node to cause delay in transmission of AP.",
+        "Sympathetics decrease the slope of the pacemaker potential.",
+        "Parasympathetics increase the firing rate by increasing K conductance."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "You are involved in laboratory research that investigates conduction pathways in the heart. You determined that conducting fiber X has several times more voltage gated sodium channels than conducting fiber Y. You also ascertained that conducting fiber Y has 10 times more voltage-gated calcium channels in comparison with X. Conducting fiber Z has more sodium channels than Y, but less than X. It also has less calcium channels than Y fiber. Choose the most accurate statement about location of conducting fibers X, Y and Z:",
+      "correct_answer": "Conducting fiber X is from Purkinje cells",
+      "incorrect_answers": [
+        "Conducting fiber Y is from Purkinje cells.",
+        "Conducting fiber X is from AV node.",
+        "Conducting fiber Z is from AV node.",
+        "Conducting fiber Y is from SA node."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 43 year old man comes to your office with complaints of constant cough with occasional bloody sputum, constipation. Further questioning reveals that he lost 10 pounds within last 3 months without any changes in his diet or level of activity. You have been the primary care physician for this patient for several years. He doesn’t have any chronic conditions and just a few times you have prescribed him bupropion.  His past medical history is significant for smoking since the age of 12. What EKG changes do you expect in this patient if his laboratory investigations reveal phosphaturia? ",
+      "correct_answer": "Shortening of QT interval",
+      "incorrect_answers": [
+        "Conducting fiber Y is from Purkinje cellsPeaked T wave.",
+        "U shaped T wave.",
+        "Prolongation of PR interval.",
+        "Prolongation of QT interval."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "You are involved in research investigating the normal heart muscle function. You place one of your volunteer participants in a pool with salt water and observe that force of contraction of his heart muscle is increasing in comparison with baseline studies. This phenomenon can be best explained by:",
+      "correct_answer": "Sarcomere length in his cardiac muscle fibers was 2.0 nm before he got into the pool",
+      "incorrect_answers": [
+        "Salt water increases contractility of the heart muscle.",
+        "Salt water increases afterload of the heart muscle.",
+        "Placement of the volunteer in the pool stimulates his sympathetic activity.",
+        "Sarcomere length in his cardiac muscle fibers was 2.2 nm before he got into the pool."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 30 year old man came to the office for a regular check up. He has no complaints. When asked why he did not show up for his last appointment, he said he had to compete in the Olympic marathon race and the good news is that he won a gold medal. “This is my 5th gold medal” he proudly said. His EKG is shown below which of the following is the most likely cause of the finding on the EKG?",
+      "correct_answer": "Increased vigil activity",
+      "incorrect_answers": [
+        "Myocardial Infarction.",
+        "Angina Pectoris.",
+        "Prinzmetal angina.",
+        "Wolf Parkinson white syndrome."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 59 year old African American male who has been a known hypertensive and diabetic patient of yours for the past 15years was rushed to the emergency room. You were paged and informed. This is a big surprise to you because you know that the patient is very compliant and his hypertension is well controlled with furosemide and Lisinopril. The patient is also on atorvastatin. His EKG shows flattening of T wave. Which of the following is true concerning the patient?",
+      "correct_answer": "Medication side effect",
+      "incorrect_answers": [
+        "He stopped taking his medication in the past few days .",
+        "He had an hypertensive emergency.",
+        "He had an acute MI.",
+        "He had a neurological complication of - of ."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 52 year old homeless man is brought to emergency room by paramedics. He was found unconscious lying on the bench at the local park.  Physical examination is notable for rales over all lung fields, flushed skin and high fever.   His respiratory rate is 31 per minute. You suspect that this patient is having initial phase of shock due to severe bacterial pneumonia. What values of cardiac output (CO), blood pressure (BP) and total peripheral resistance (TPR) would you expect in this patient? = no changes, ↓-decreased, ↑-increased ",
+      "correct_answer": "↓TPR, ↑CO, ↓BP ↓ PVR",
+      "incorrect_answers": [
+        "↑TPR, ↓CO, ↓BP ↓ PVR .",
+        "↓TPR, ↓CO, ↓BP ↑ PVR.",
+        "↑TPR, ↓CO, =BP ↑ PVR.",
+        "↓TPR, =CO, =BP ↑ PVR."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 43 year old man is brought to emergency room by paramedics. About an hour ago he was stabbed at the shoulder with the knife in the fight at the local bar. He is bleeding profusely and you suspect that he is having shock due to large volume blood loss. What values of cardiac output (CO), blood pressure (BP) and total peripheral resistance (TPR) would you expect in this patient?",
+      "correct_answer": "↑TPR, ↓CO, ↓BP",
+      "incorrect_answers": [
+        "↓TPR, ↓CO, ↓BP.",
+        "↓TPR, ↑CO, ↓BP.",
+        "↑TPR, ↓CO, =BP.",
+        "↓TPR, =CO, =BP."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "You are involved in research investigating the normal heart muscle function. You place one of your volunteer participants in a pool with salt water and observe that force of contraction of his heart muscle is increasing in comparison with baseline studies. This phenomenon can be best explained by:",
+      "correct_answer": "Sarcomere length in his cardiac muscle fibers was 2.0 nm before he got into the pool",
+      "incorrect_answers": [
+        "Salt water increases contractility of the heart muscle.",
+        "Salt water increases afterload of the heart muscle.",
+        "Placement of the volunteer in the pool stimulates his sympathetic activity.",
+        "Sarcomere length in his cardiac muscle fibers was 2.2 nm before he got into the pool."
+      ]
+    },
+
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "The functional residual capacity can be calculated by adding Expiratory Reserve Volume (ERV) and Residual Volume (RV).Which of the following best describes ERV? ",
+      "correct_answer": "Reservoir for gas exchange  ",
+      "incorrect_answers": [
+        "Dynamic airway collapse.",
+        "Dynamic compression of the airways .",
+        "Trapping air in the alveoli .",
+        "Alveolar recruitment facilitating gas exchange ."
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": " A hospital is being probed by the Accreditation Council for Graduate Medical Education (ACGME) because of noncompliance with their 30hour max rule which made a resident to give 2L of distilled water IV to a 67 year old patient instead of normal saline. Which of the following diagrams best represents the patient’s fluid status if the dashed lines represent the original conditions and the solid line the final steady state?",
+      "correct_answer": "a",
+      "incorrect_answers": ["b", "c", "d", "e"]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "The amount of air that stays in the lungs during normal breathing in a 30 year normal patient is 2300ml.  The amount of air that is always in the lungs and can never be expired is 1000ml.  The amount of air breathed in or out during normal respiration is 500ml and the amount of air that can be forced out of the lungs after a normal inspiration is 4500ml.  What is the amount of additional air that can be breathed out after the end of normal expiration? ",
+      "correct_answer": "1300ml",
+      "incorrect_answers": ["1800ml.", "500ml.", "4000ml.", "2200ml."]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "Type II pneumocytes help in manufacturing substances that play important roles in respiration. Which of the following is not true about type II pneumocytes?",
+      "correct_answer": "They play important roles in the maturation of the lung in utero",
+      "incorrect_answers": [
+        "There are more type II cells than type I cell.",
+        "They serve as precursors for both type I and some type II cells .",
+        "They are larger than type I cells.",
+        "Unlike type I cells, they can replicate and they help in making surfactants."
+      ]
+    },
+
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 65 year old man comes to your clinic with complaints of shortness of breath and productive cough producing pink, frothy sputum. He tells you that he had two ‘’severe heart attacks’’ in the past. Upon questioning he also tells you that he uses three pillows to sleep at night and sometimes he even has to get up at night “to catch his breath”. On physical examination you find peripheral edema and jugular venous distention. What values of PCWP (pulmonary capillary wedge pressure), LVEDV (left ventricular end diastolic volume), LVESV (left ventricular end systolic volume) and CO (cardiac output) would you expect?",
+      "correct_answer": "Active process with energy utilized.",
+      "incorrect_answers": [
+        "Recycling of calcium",
+        "Extracellular calcium utilization",
+        "Voltage gated calcium channel activation",
+        "Tetanus"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": " A 32 year old male is in the rehabilitation unit recovering from a motor vehicle collision.  Chemical-Mechanical transduction that takes place during physical therapy with the binding of cross-bridges to actin is dependant on which of the following? ",
+      "correct_answer": "Availability of calcium",
+      "incorrect_answers": [
+        "High energy.",
+        "Sliding of filaments",
+        "Binding of ATP to cross-bridges",
+        "Tropomyosin cross-linking"
+      ]
+    },
+
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 23 year old football player comes in for a physical.  He has no current complaints except for a mild lower back ache for which he is taking baclofen.  On physical examination, strength is 4/5 in the upper limbs, 5/5 in the lower limbs.  There is resistance to contraction.  Excitation-contraction coupling along with cross bridge formation is the process that takes place in a contracting muscle.  The event of relaxation is best described as? ",
+      "correct_answer": "a",
+      "incorrect_answers": ["b", "c", "d", "e"]
+    },
+
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "Increased viscosity",
+      "question": "A 65 year old man comes to your clinic with complaints of shortness of breath and productive cough producing pink, frothy sputum. He tells you that he had two ‘’severe heart attacks’’ in the past. Upon questioning he also tells you that he uses three pillows to sleep at night and sometimes he even has to get up at night “to catch his breath”. On physical examination you find peripheral edema and jugular venous distention. What values of PCWP (pulmonary capillary wedge pressure), LVEDV (left ventricular end diastolic volume), LVESV (left ventricular end systolic volume) and CO (cardiac output) would you expect?  ",
+      "correct_answer": "↓PCWP, ↑LVEDV, ↑LVESV, ↓CO",
+      "incorrect_answers": [
+        "↓PCWP,↑LVEDV,↓LVESV,↓CO.",
+        "↓PCWP,↑LVEDV,↓LVESV,↓CO.",
+        "↑PCWP,↑LVEDV,↓LVESV,↓CO.",
+        "↑PCWP,↑LVEDV,↑LVESV,↓CO."
+      ]
     }
   ]
 }

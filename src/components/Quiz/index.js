@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Alert from "@mui/material/Alert";
-
+import img_36 from "./img-36.png";
+import img_45 from "./45.png";
+import img_46 from "./46.PNG";
 import Stack from "@mui/material/Stack";
 import {
   Container,
@@ -169,7 +171,40 @@ const Quiz = ({ data, countdownTime, endQuiz }) => {
                 <Item.Meta>
                   <Message size="huge" floating>
                     <b>{`Q. ${he.decode(data[questionIndex].question)}`}</b>
+                    {questionIndex == 36 && (
+                      <img
+                        src={img_36}
+                        alt=""
+                        style={{ width: "100%", height: "75px" }}
+                      />
+                    )}
                   </Message>
+                  {questionIndex == 43 && (
+                    <img
+                      src={img_45}
+                      alt=""
+                      style={{
+                        width: "50%",
+                        height: "85px",
+                        display: "flex",
+
+                        margin: "auto",
+                      }}
+                    />
+                  )}
+                  {questionIndex == 48 && (
+                    <img
+                      src={img_46}
+                      alt=""
+                      style={{
+                        width: "50%",
+                        height: "85px",
+                        display: "flex",
+
+                        margin: "auto",
+                      }}
+                    />
+                  )}
                   <br />
                   <Item.Description>
                     <h3>Please choose one of the following answers:</h3>
